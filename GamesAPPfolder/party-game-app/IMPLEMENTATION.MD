@@ -85,15 +85,12 @@ Here's a phased approach to building your mobile-first party game web app, start
    - Set up Firebase Authentication
    - Initialize Firebase in the React app
 
-2. **User Authentication**
-   - Implement sign-up/login flows
-   - Create user profiles
-   - Add authentication guards
 
-3. **Real-time Data Integration**
+2. **Real-time Data Integration**
    - Convert local state to use Firestore
    - Implement real-time listeners for game sessions
    - Create data models for games, sessions, and players
+
 
 ### Deliverables:
 - Working Firebase integration
