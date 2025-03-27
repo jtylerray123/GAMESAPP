@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Game sessions collection rules
+    match /gameSessions/{sessionId} {
+      // Anyone can read active game sessions
+      allow read: if resource.data.status == 'waiting';
+      
+      // Anyone can create sessions
+      allow create: if true;
+      
+      // Anyone can update sessions
+      allow update: if true;
+      
+      // Anyone can delete sessions
+      allow delete: if true;
+    }
+  }
+} 

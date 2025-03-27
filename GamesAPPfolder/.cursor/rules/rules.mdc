@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Keep notes of what you're doing in the README.md file, BUT DO NOT EVER OVERWRITE the README.md file. only ever add notes to the bottom.
+
+
+
+# Party Game Web App - Simple Tech Stack
+
+## Frontend
+- **Framework**: React.js
+- **Styling**: Tailwind CSS (for quick responsive styling)
+- **Build Tool**: Vite (faster than Create React App)
+
+## Backend & Real-time Communication
+- **Platform**: Firebase (all-in-one solution)
+  - Firestore (real-time database)
+  - Firebase Authentication
+  - Firebase Hosting
+  - Firebase Cloud Functions (for any complex logic)
+
+## Key Benefits of This Stack
+1. **Minimal Setup**: Firebase handles database, authentication, and hosting in one platform
+2. **Real-time by Default**: Firestore provides real-time updates essential for multiplayer games
+3. **No Complex Backend**: Avoid building custom Node.js/Express server
+4. **Scalable**: Can handle growing user base without infrastructure changes
+5. **Quick Development**: Faster time-to-market with less custom code
+
+## Implementation Structure
+```
+party-game-app/
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── pages/               # Main app pages
+│   ├── firebase/            # Firebase setup and utility functions
+│   ├── hooks/               # Custom React hooks
+│   ├── context/             # React context for game state
+│   └── games/               # Game logic and configurations
+├── public/                  # Static assets
+└── firebase.json            # Firebase configuration
+```
+
+## Development Simplifications
+- No need to maintain separate backend codebase
+- Authentication comes ready to use
+- Real-time sync handled automatically by Firestore
+- Hosting and deployment through simple Firebase CLI commands
+
+This tech stack focuses on simplicity while providing all the functionality you need for your party game app. Firebase's real-time capabilities are perfectly suited for multiplayer games, and you won't need to set up and maintain complex server infrastructure.
+
+Would you like me to elaborate on any specific aspect of this solution?
